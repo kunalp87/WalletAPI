@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfer</title>
+    <link rel="stylesheet" href="/css/transfer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2><i class="fa fa-university" aria-hidden="true"></i> Wallet Bank</h2>
+        <div class="ul">
+            <ul>
+                <a href="/html/home.html"> <i class="fa fa-home" aria-hidden="true"></i>Home</a> <br>
+                <a href="/html/AddMoney.html"> <i class="fa fa-credit-card" aria-hidden="true"></i>Add Money</a> <br>
+                <a href="/html/withdraw.html"> <i class="fa fa-eraser" aria-hidden="true"></i>Withdraw Money</a><br>
+                <a href="/html/transfer.html"> <i class="fa fa-exchange" aria-hidden="true"></i>Tranfer Money</a><br>
+                <a href="/html/trasaction.html"><i class="fa fa-history" aria-hidden="true"></i>Transaction History</a><br>
+                <a href="/html/check.html"> <i class="fa fa-eye" aria-hidden="true"></i>Check Balance</a><br>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+
+
+        <div class="nav">
+            <h2>Hi,Admin</h2>
+            <button type="button" id="btn"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</button>
+            <a href="#" id="anc"><i class="fa fa-user-circle" aria-hidden="true" ></i></a>
+
+        </div>
+        <div class="main">
+            <div class="content">
+                
+                <form  class="form">
+                    <h1>Transfer Amount</h1>
+                    <div class="input-box">
+                        <p>Enter Mobile No</p>
+                    <input type="text" maxlength="10" placeholder="Enter Mobile Number" id="mobile">
+                    </div>
+                    <div class="input-box">
+
+                        <p>Enter Amount</p>
+                        <input type="text" placeholder="Enter amount" id="amount"><br>
+                    </div>
+                    <div class="input-box">
+                        <p>Enter Reason</p>
+                        <input type="text" placeholder="Enter Reason" id="reason">
+                        <button type="submit" class="btn"> Transfer</button>
+                        
+                    </div>
+                  <div class="input-box">
+
+                      <p>Current Balance</p>
+                      <input type="text" placeholder="" readonly id="input">
+                  </div>
+                </form>
+            </div>
+        </div>
+        <script src="/js/transfer.js"></script>
+</body>
+
+</html>

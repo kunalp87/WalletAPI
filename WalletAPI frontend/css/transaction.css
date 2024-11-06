@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 400px;
+    background-color: #01204E;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.sidebar h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 70px;
+
+}
+
+.sidebar .ul ul {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    padding-left: 50px;
+
+}
+
+.sidebar .ul ul a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding: 17px 10px;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+
+
+.sidebar .ul ul a:hover {
+
+    background-color: blue;
+    border-radius: 10px;
+    transform: scale(1.1);
+
+}    
+
+.sidebar .ul ul a i {
+    margin-right: 20px;
+}
+
+.right {
+    display: block;
+}
+
+.nav {
+    width:1310px;
+    height: 120px;
+    background-color: #758694;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nav h2 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    padding-left: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.nav button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    position: relative;
+    left:800px;
+    i{
+        font-size: 25px;
+        position: relative;
+        /* left:1100px; */
+        font-weight: 900;
+    }
+}
+.nav a i{
+    font-size: 50px;
+    position: relative;
+    left: 850px;
+    color: #000000;
+    top: 35px;
+}
+
+.main {
+    height: 853px;
+    width: 1300px;
+    background-color: rgb(228, 228, 228);
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
+    /* position: fied; */
+    overflow: auto;
+    margin: 120px auto 0px; 
+}
+
+.content {
+    width: 1200px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #000000;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-left: 80px;
+    /* margin-top: 50px; */
+    margin: 80px 100px 0px 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 15px 2px rgb(0, 0, 0,0.5);
+
+}
+.content h1{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+/* .content .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  } */
+.input-box input{
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 15px 45px 15px 30px;
+    margin-bottom: 50px;
+    margin-left: 38px;
+    
+  }
+.input-box input::placeholder{
+    color: #000000;
+  }
+
+  .content .btn{
+    width: 20%;
+    height: 45px;
+    background: #020752;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-left: 450px;
+  }
+.input-box p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+}  
+
+
+.table{
+    border: 1px solid black;
+    font-size: 20px;
+    /* width: 90%; */
+    margin: 0 auto 0;
+    
+}
+.table thead {
+    text-align: center;
+   
+}
+.table thead tr th{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    /* border: 1px solid black; */
+    padding-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#tbody {
+    padding-right: 30px;
+    padding: auto;
+    text-align: center;
+    /* margin-left: 20px; */
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding-top:  10px;
+
+}
+#tbody tr td{
+    padding: 5px 5px;
+}
